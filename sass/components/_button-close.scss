@@ -1,0 +1,26 @@
+.close-button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	width: 30px;
+	height: 30px;
+
+	background-color: $basicWhiteColor;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+
+	cursor: pointer;
+}
+
+.close-button-icon {
+	width: 11px;
+	height: 11px;
+	fill: $basicBlackColor;
+	transition: fill $primaryTransition;
+
+	.close-button:hover &,
+	.close-button:focus & {
+		fill: $accentColor;
+	}
+}

@@ -1,0 +1,40 @@
+.footer-form-block {
+	margin-left: auto;
+}
+
+.subscribe-form {
+	display: flex;
+}
+
+.footer-email-input {
+	display: inline-block;
+
+	min-width: 350px;
+
+	padding: 15px;
+	border: 1px solid;
+	border-radius: 4px;
+	border-color: $primaryTextColor;
+
+	margin-right: 12px;
+
+	@include fontBasicStyles(16px, 1.25);
+
+	color: $basicWhiteColor;
+
+	background-color: transparent;
+
+	outline: none;
+
+	transition: border-color $primaryTransition;
+
+	&::placeholder {
+		@include fontBasicStyles(16px, 1.25);
+
+		color: $primaryTextColor;
+	}
+
+	&:focus {
+		border-color: $accentColor;
+	}
+}

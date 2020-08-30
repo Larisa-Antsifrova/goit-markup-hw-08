@@ -1,0 +1,19 @@
+.site-nav .current {
+	position: relative;
+
+	color: $accentColor;
+
+	&::after {
+		content: " ";
+		position: absolute;
+
+		bottom: -1px;
+		left: 0;
+
+		width: 100%;
+		height: 4px;
+
+		background-color: $accentColor;
+		border-radius: 2px;
+	}
+}

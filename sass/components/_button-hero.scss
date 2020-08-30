@@ -1,0 +1,11 @@
+.hero-button {
+	@extend %button;
+
+	transition: color $primaryTransition, background-color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+		background-color: $basicWhiteColor;
+	}
+}

@@ -1,0 +1,22 @@
+.form-button {
+	@extend %button;
+
+	display: inline-flex;
+	align-items: center;
+
+	transition: color $primaryTransition, background-color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+		background-color: $basicWhiteColor;
+	}
+}
+
+.button-icon {
+	margin-left: 10px;
+	width: 24px;
+	height: 24px;
+
+	fill: currentColor;
+}

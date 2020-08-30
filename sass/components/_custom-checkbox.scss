@@ -1,0 +1,36 @@
+.checkbox {
+	position: absolute;
+
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.icon-checkbox {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 15px;
+
+	border: 2px solid $basicBlackColor;
+	border-radius: 2px;
+	background-color: $basicWhiteColor;
+
+	transition: background-color $primaryTransition, border $primaryTransition;
+
+	.checkbox:checked + & {
+		background-image: url(../images/icons/check.svg);
+		background-size: contain;
+		background-color: $accentColor;
+		background-origin: border-box;
+		border: transparent;
+	}
+
+	.checkbox:focus + & {
+		outline: 1px solid $accentColor;
+		outline-offset: 5px;
+	}
+}

@@ -1,0 +1,23 @@
+.logo {
+	display: block;
+	margin-right: 85px;
+	margin-bottom: 20px;
+
+	font-family: $logoFont;
+
+	@include fontBasicStyles(26px, 1.19, 700);
+
+	color: $accentColor;
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+.logo-header {
+	color: $basicBlackColor;
+}
+
+.logo-footer {
+	color: $basicWhiteColor;
+}

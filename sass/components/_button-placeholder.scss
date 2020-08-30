@@ -1,0 +1,17 @@
+%button {
+	min-width: 200px;
+	min-height: 50px;
+
+	padding: 10px 28px;
+
+	@include fontBasicStyles(16px, 1.87, 700, 0.06em);
+
+	text-align: center;
+
+	color: $basicWhiteColor;
+	background-color: $accentColor;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	cursor: pointer;
+}

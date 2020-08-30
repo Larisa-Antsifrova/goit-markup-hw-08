@@ -1,0 +1,46 @@
+.social-links {
+	display: flex;
+}
+
+.social-links-item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.socials-icon {
+	height: 20px;
+	width: 20px;
+
+	fill: currentColor;
+}
+
+.social-links-item a {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+
+	justify-content: center;
+	align-items: center;
+
+	color: $primaryIconsColor;
+	background-color: transparent;
+
+	transition: color $primaryTransition, background-color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $basicWhiteColor;
+		background-color: $accentColor;
+	}
+}
+
+.team-card-social-links-list {
+	justify-content: center;
+}
+
+.footer-social-links-item a {
+	color: $basicWhiteColor;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition: background-color $primaryTransition;
+}

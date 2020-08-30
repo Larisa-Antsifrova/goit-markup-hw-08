@@ -1,0 +1,19 @@
+.hero-section {
+	text-align: center;
+}
+
+.hero-flexbox {
+	display: flex;
+	align-items: center;
+}
+
+.hero-title {
+	margin: 0 auto 30px auto;
+	width: 696px;
+
+	@include fontBasicStyles(44px, 1.36, 900, 0.06em);
+
+	text-transform: uppercase;
+
+	color: $basicWhiteColor;
+}

@@ -1,0 +1,14 @@
+.hero-banner {
+	height: 600px;
+	max-width: 1600px;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	background-color: rgba(47, 48, 58, 0.4);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("../images/background/hero-bg-image.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

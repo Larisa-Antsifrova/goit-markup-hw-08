@@ -1,0 +1,30 @@
+.page-nav {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+.site-nav {
+	display: flex;
+
+	li:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
+.site-nav a {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	@include fontBasicStyles(14px, 1.14, 500, 0.02em);
+
+	color: $primaryTitleColor;
+
+	transition: color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+	}
+}

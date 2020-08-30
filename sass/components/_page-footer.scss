@@ -1,0 +1,62 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	background-color: $footerBackgroundColor;
+}
+
+.footer-flexbox {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-contacts-block,
+.footer-social-links-block {
+	width: calc((50% - 45px) / 2);
+}
+
+.footer-contacts-block {
+	margin-right: 30px;
+}
+
+.footer-social-links-block {
+	margin-right: 15px;
+}
+
+.address {
+	margin-bottom: 8px;
+
+	font-style: normal;
+	@include fontBasicStyles(14px, 1.71);
+
+	color: $basicWhiteColor;
+}
+
+.contacts-footer li:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.contacts-footer a {
+	@include fontBasicStyles(14px, 1.71);
+
+	color: rgba(255, 255, 255, 0.6);
+
+	transition: color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+	}
+}
+
+.call-to-action {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 20px;
+
+	@include fontBasicStyles(14px, 1.14, 700);
+
+	text-transform: uppercase;
+
+	color: $basicWhiteColor;
+}

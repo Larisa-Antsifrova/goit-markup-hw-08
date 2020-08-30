@@ -1,0 +1,37 @@
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.clients-item {
+	width: calc((100% - 30px * 5) / 6);
+
+	&:not(:nth-child(6n)) {
+		margin-right: 30px;
+	}
+}
+
+.clients-item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 90px;
+
+	color: $primaryIconsColor;
+
+	border: 1px solid $primaryIconsColor;
+	border-radius: 4px;
+
+	transition: color $primaryTransition, border-color $primaryTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+		border-color: $accentColor;
+	}
+}
+
+.clients-logo-icon {
+	fill: currentColor;
+}

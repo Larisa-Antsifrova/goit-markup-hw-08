@@ -1,0 +1,10 @@
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
+	@include fontBasicStyles(36px, 1.72, 700);
+
+	text-align: center;
+
+	color: $primaryTitleColor;
+}
