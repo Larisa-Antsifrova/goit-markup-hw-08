@@ -13,7 +13,6 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-		margin-right: 85px;
 		margin-bottom: 20px;
 		@include fontBasicStyles(26px, 1.19, 700);
 		&.no-margin-bottom {
@@ -32,7 +31,5 @@
 
 .logo.no-padding {
 	padding: 0;
-	@media screen and (max-width: 767px) {
-		margin-bottom: 20px;
-	}
+	margin-bottom: 20px;
 }

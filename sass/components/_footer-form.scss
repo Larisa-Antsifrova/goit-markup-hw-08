@@ -3,6 +3,7 @@
 		text-align: center;
 	}
 	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px) / 2);
 		margin-left: auto;
 	}
 }
@@ -14,16 +15,12 @@
 }
 
 label.call-to-action {
-	display: block;
+	@media screen and (max-width: 1199px) {
+		display: block;
+	}
 }
 
 .footer-email-input {
-	display: block;
-
-	width: 100%;
-	max-width: 450px;
-	margin: 0 auto 20px auto;
-
 	padding: 15px;
 	border: 1px solid;
 	border-radius: 4px;
@@ -49,7 +46,15 @@ label.call-to-action {
 		border-color: $accentColor;
 	}
 
+	@media screen and (max-width: 1199px) {
+		display: block;
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto 20px auto;
+	}
+
 	@media screen and (min-width: 1200px) {
+		min-width: 358px;
 		margin-right: 12px;
 	}
 }

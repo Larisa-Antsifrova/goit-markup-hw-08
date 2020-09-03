@@ -31,7 +31,8 @@
 
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px * 3) / 4);
-		.team-card:not(:nth-child(4n)) {
+
+		&:not(:nth-child(4n)) {
 			margin-right: 30px;
 		}
 	}
