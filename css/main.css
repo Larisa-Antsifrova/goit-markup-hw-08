@@ -361,10 +361,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
+.section {
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -579,17 +577,12 @@ img {
 .hero-title {
   margin: 0 auto 30px auto;
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
   color: #ffffff;
-}
-
-@media screen and (min-width: 480px) {
-  .hero-title {
-    max-width: 360px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-  }
+  max-width: 360px;
 }
 
 @media screen and (min-width: 1200px) {
