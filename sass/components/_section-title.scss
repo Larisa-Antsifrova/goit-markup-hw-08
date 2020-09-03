@@ -3,7 +3,7 @@
 	text-align: center;
 	color: $primaryTitleColor;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
 		@include fontBasicStyles(28px, 1.14, 700);
 	}

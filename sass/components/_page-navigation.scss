@@ -7,7 +7,14 @@
 .page-nav {
 	display: flex;
 	align-items: center;
-	margin-right: auto;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-right: 86px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: auto;
+	}
 }
 
 .site-nav {
