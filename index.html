@@ -14,7 +14,7 @@
 				<a href="./index.html" lang="en" class="logo no-margin-bottom link">
 						Web<span class="logo-header">Studio</span>
 					</a>
-				<div class="mobile-menu-block flexbox">
+				<div id= "mobile-menu-block" class="mobile-menu-block flexbox " data-menu>
 					<nav class="page-nav">
 						<ul class="site-nav list">
 							<li><a href="./index.html" class="link current">Студия</a></li>
@@ -42,6 +42,14 @@
 						</li>
 					</ul>
 				</div>
+
+				<button type="submit" class="mobile-menu-button" data-menu-button aria-controls="mobile-menu-block" aria-expanded="false">
+					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="icon-menu-burger" href="./images/icons/sprite.svg#icon-menu-burger"></use>
+						<use class="icon-menu-close" href="./images/icons/sprite.svg#icon-menu-close"></use>
+					</svg>
+				</button>
+				
 			</div>
 		</header>
 
@@ -482,5 +490,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

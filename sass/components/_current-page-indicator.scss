@@ -7,7 +7,6 @@
 		content: " ";
 		position: absolute;
 
-		bottom: -1px;
 		left: 0;
 
 		width: 100%;
@@ -15,5 +14,13 @@
 
 		background-color: $accentColor;
 		border-radius: 2px;
+
+		@media screen and (max-width: 767px) {
+			bottom: -9px;
+		}
+
+		@media screen and (min-width: 768px) {
+			bottom: -1px;
+		}
 	}
 }

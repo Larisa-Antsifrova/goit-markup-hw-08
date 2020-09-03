@@ -1,0 +1,44 @@
+.mobile-menu-button {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.mobile-menu-button .icon-menu-close {
+	display: none;
+}
+
+.mobile-menu-button .icon-menu-burger {
+	display: block;
+}
+
+.mobile-menu-button.is-open .icon-menu-close {
+	display: block;
+}
+
+.mobile-menu-button.is-open .icon-menu-burger {
+	display: none;
+}
+
+.icon-menu-burger,
+.icon-menu-close {
+	fill: $primaryTitleColor;
+	transition: fill $primaryTransition;
+}
+
+.icon-menu-burger:hover,
+.icon-menu-burger:focus,
+.icon-menu-close:hover,
+.icon-menu-close:focus {
+	fill: $accentColor;
+}
