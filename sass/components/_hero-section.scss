@@ -9,11 +9,16 @@
 
 .hero-title {
 	margin: 0 auto 30px auto;
-	width: 696px;
-
-	@include fontBasicStyles(44px, 1.36, 900, 0.06em);
-
 	text-transform: uppercase;
 
 	color: $basicWhiteColor;
+	@media screen and (min-width: 480px) {
+		max-width: 360px;
+		@include fontBasicStyles(26px, 1.61, 900, 0.06em);
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 696px;
+		@include fontBasicStyles(44px, 1.36, 900, 0.06em);
+	}
 }

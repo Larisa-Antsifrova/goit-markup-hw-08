@@ -1,13 +1,23 @@
 .clients {
 	display: flex;
 	flex-wrap: wrap;
+
+	@media screen and (min-width: 480px) {
+		margin: -15px;
+	}
 }
 
 .clients-item {
-	width: calc((100% - 30px * 5) / 6);
+	@media screen and (max-width: 767px) {
+		width: calc((100% - 30px * 2) / 2);
+		margin: 15px;
+	}
 
-	&:not(:nth-child(6n)) {
-		margin-right: 30px;
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px * 5) / 6);
+		&:not(:nth-child(6n)) {
+			margin-right: 30px;
+		}
 	}
 }
 
@@ -15,8 +25,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 170px;
-	height: 90px;
+	min-height: 90px;
 
 	color: $primaryIconsColor;
 
@@ -34,4 +43,8 @@
 
 .clients-logo-icon {
 	fill: currentColor;
+
+	@media screen and (max-width: 479px) {
+		padding: 5px;
+	}
 }

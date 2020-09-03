@@ -1,10 +1,15 @@
 .section-title {
 	margin-top: 0;
-	margin-bottom: 50px;
-
-	@include fontBasicStyles(36px, 1.72, 700);
-
 	text-align: center;
-
 	color: $primaryTitleColor;
+
+	@media screen and (min-width: 480px) {
+		margin-bottom: 30px;
+		@include fontBasicStyles(28px, 1.14, 700);
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+		@include fontBasicStyles(36px, 1.72, 700);
+	}
 }

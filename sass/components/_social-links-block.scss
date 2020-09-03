@@ -1,5 +1,9 @@
 .social-links {
 	display: flex;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
 }
 
 .social-links-item:not(:last-child) {

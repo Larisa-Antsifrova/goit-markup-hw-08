@@ -1,8 +1,10 @@
 .header {
 	border-bottom: 1px solid #ececec;
 
-	&-flexbox {
-		display: flex;
-		align-items: center;
+	@media screen and (min-width: 768px) {
+		.header-flexbox {
+			display: flex;
+			align-items: center;
+		}
 	}
 }
