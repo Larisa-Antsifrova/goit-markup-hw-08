@@ -1,11 +1,22 @@
 .portfolio-filter {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 34px;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 34px;
+	}
 }
 
 .portfolio-filter li:not(:last-child) {
 	margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio-filter li {
+		margin-bottom: 15px;
+	}
 }
 
 .portfolio-filter button {
@@ -20,7 +31,6 @@
 
 	color: $primaryTitleColor;
 	background-color: $secondaryBackgrounColor;
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 
 	cursor: pointer;
 
