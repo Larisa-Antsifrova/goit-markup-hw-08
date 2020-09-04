@@ -320,6 +320,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -420,6 +424,8 @@ img {
     padding: 60px 0;
     background-color: #ffffff;
     width: 100%;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .mobile-menu-block.is-open {
     display: block;
@@ -1410,6 +1416,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .modal-backdrop.is-hidden {
@@ -1417,23 +1424,27 @@ img {
   pointer-events: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-backdrop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 93px 15px;
   }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 100%;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1442,7 +1453,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 100%;
+    position: relative;
     max-width: 450px;
     min-height: 609px;
   }
@@ -1450,14 +1461,30 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 528px;
     height: 581px;
   }
 }
 
 .modal-backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
 .modal-title {
@@ -1884,10 +1911,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-menu-burger:hover,
-.icon-menu-burger:focus,
-.icon-menu-close:hover,
-.icon-menu-close:focus {
+.mobile-menu-button:hover .icon-menu-burger,
+.mobile-menu-button:hover .icon-menu-close,
+.mobile-menu-button:focus .icon-menu-burger,
+.mobile-menu-button:focus .icon-menu-close {
   fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

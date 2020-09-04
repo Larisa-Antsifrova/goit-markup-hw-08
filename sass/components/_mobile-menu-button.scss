@@ -36,9 +36,10 @@
 	transition: fill $primaryTransition;
 }
 
-.icon-menu-burger:hover,
-.icon-menu-burger:focus,
-.icon-menu-close:hover,
-.icon-menu-close:focus {
-	fill: $accentColor;
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+	.icon-menu-burger,
+	.icon-menu-close {
+		fill: $accentColor;
+	}
 }

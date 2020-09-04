@@ -12,21 +12,22 @@
 	opacity: 1;
 	transition: opacity $primaryTransition;
 
+	overflow-y: scroll;
+
 	&.is-hidden {
 		opacity: 0;
 		pointer-events: none;
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		justify-content: center;
 		padding: 93px 15px;
 	}
 }
 
 .modal {
-	position: absolute;
-
-	top: 50%;
-	left: 50%;
+	width: 100%;
 
 	padding: 40px;
 
@@ -34,21 +35,31 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
-	transform: translate(-50%, -50%) scale(1);
+	transform: scale(1);
 	transition: transform $primaryTransition;
 
 	@media screen and (max-width: 1199px) {
-		width: 100%;
+		position: relative;
 		max-width: 450px;
 		min-height: 609px;
 	}
 
 	@media screen and (min-width: 1200px) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%) scale(1);
+		transition: transform $primaryTransition;
+
 		width: 528px;
 		height: 581px;
 	}
 }
 
 .modal-backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.9);
+	transform: scale(0.9);
+	@media screen and (min-width: 1200px) {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
 }
