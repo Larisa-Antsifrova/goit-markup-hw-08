@@ -81,3 +81,7 @@
 		display: inline-block;
 	}
 }
+
+.call-to-action > b {
+	@include fontBasicStyles(14px, 1.14, 700);
+}

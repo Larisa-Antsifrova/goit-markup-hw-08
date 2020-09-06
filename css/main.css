@@ -116,6 +116,11 @@ abbr[title] {
 /**
 Add the correct font weight in Edge and Safari.
 */
+b,
+strong {
+  font-weight: bolder;
+}
+
 /**
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
@@ -1364,6 +1369,13 @@ img {
   .call-to-action {
     display: inline-block;
   }
+}
+
+.call-to-action > b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 1199px) {
