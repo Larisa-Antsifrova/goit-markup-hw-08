@@ -883,7 +883,7 @@ img {
   height: 30px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-radius: 50px;
   padding: 0;
   cursor: pointer;
 }
@@ -1563,7 +1563,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
-  color: red;
+  color: #212121;
 }
 
 .modal-form-item {
