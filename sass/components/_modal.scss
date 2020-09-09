@@ -22,6 +22,7 @@
 	@media screen and (max-width: 1199px) {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		padding: 20px 15px;
 	}
 }
@@ -59,6 +60,7 @@
 
 .modal-backdrop.is-hidden .modal {
 	transform: scale(0.9);
+
 	@media screen and (min-width: 1200px) {
 		transform: translate(-50%, -50%) scale(0.9);
 	}

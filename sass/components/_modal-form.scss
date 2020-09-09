@@ -21,6 +21,12 @@
 	@include fontBasicStyles(12px, 1.16, 400, 0.01em);
 
 	color: $primaryTextColor;
+
+	transition: color $primaryTransition;
+
+	.modal-form-item:focus-within & {
+		color: $accentColor;
+	}
 }
 
 .modal-form-field {
